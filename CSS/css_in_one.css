@@ -1,0 +1,322 @@
+/* Selectors */
+
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ID selector */
+  #main-header {
+    background-color: lightblue;
+  }
+  
+  /* Class selector */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Tag selector */
+  h1 {
+    font-size: 2rem;
+  }
+  
+  /* Tag with class selector */
+  p.intro {
+    color: grey;
+    font-size: 1.2rem;
+  }
+  
+  /* Tag with ID selector */
+  div#content {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Attribute selector */
+  input[type="text"] {
+    border: 1px solid black;
+  }
+  
+  /* Attribute with value selector */
+  a[target="_blank"] {
+    color: blue;
+  }
+  
+  /* Attribute with value in a space-separated list selector */
+  [rel~="author"] {
+    font-weight: bold;
+  }
+  
+  /* Attribute starting with value selector */
+  a[href^="https://"] {
+    color: green;
+  }
+  
+  /* Attribute ending with value selector */
+  a[href$=".pdf"] {
+    color: red;
+  }
+  
+  /* Attribute containing value selector */
+  a[href*="example"] {
+    text-decoration: underline;
+  }
+  
+  /* First child selector */
+  li:first-child {
+    font-weight: bold;
+  }
+  
+  /* Last child selector */
+  li:last-child {
+    font-style: italic;
+  }
+  
+  /* Nth child selector */
+  li:nth-child(2) {
+    color: blue;
+  }
+  
+  /* Nth last child selector */
+  li:nth-last-child(1) {
+    color: red;
+  }
+  
+  /* Only child selector */
+  div:only-child {
+    border: 2px solid black;
+  }
+  
+  /* First of type selector */
+  p:first-of-type {
+    font-size: 1.5rem;
+  }
+  
+  /* Last of type selector */
+  p:last-of-type {
+    font-size: 0.75rem;
+  }
+  
+  /* Nth of type selector */
+  p:nth-of-type(2) {
+    color: purple;
+  }
+  
+  /* Nth last of type selector */
+  p:nth-last-of-type(1) {
+    color: brown;
+  }
+  
+  /* Only of type selector */
+  p:only-of-type {
+    background-color: yellow;
+  }
+  
+  /* Empty selector */
+  div:empty {
+    display: none;
+  }
+  
+  /* Parent selector (not directly supported in CSS) */
+  
+  /* Contains text selector */
+  p:contains("important") {
+    color: red;
+  }
+  
+  /* Language selector */
+  :lang(en) {
+    font-family: "Times New Roman";
+  }
+  
+  /* Properties */
+  
+  /* Background property */
+  body {
+    background: url('image.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Border property */
+  div {
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
+  /* Box shadow property */
+  button {
+    box-shadow: 3px 3px 5px grey;
+  }
+  
+  /* Color property */
+  p {
+    color: #333;
+  }
+  
+  /* Cursor property */
+  a {
+    cursor: pointer;
+  }
+  
+  /* Display property */
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Flexbox properties */
+  .container {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+  }
+  
+  /* Float property */
+  img {
+    float: left;
+  }
+  
+  /* Font properties */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Height property */
+  div {
+    height: 100px;
+  }
+  
+  /* Margin property */
+  div {
+    margin: 20px;
+  }
+  
+  /* Max height and width */
+  img {
+    max-width: 100%;
+    max-height: 300px;
+  }
+  
+  /* Min height and width */
+  div {
+    min-width: 200px;
+    min-height: 100px;
+  }
+  
+  /* Overflow property */
+  div {
+    overflow: hidden;
+  }
+  
+  /* Padding property */
+  section {
+    padding: 20px;
+  }
+  
+  /* Position property */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Text align property */
+  p {
+    text-align: justify;
+  }
+  
+  /* Width property */
+  div {
+    width: 50%;
+  }
+  
+  /* Z-index property */
+  header {
+    z-index: 999;
+  }
+  
+  /* Opacity property */
+  img {
+    opacity: 0.8;
+  }
+  
+  /* Transition property */
+  button {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Transform property */
+  div {
+    transform: rotate(45deg);
+  }
+  
+  /* Visibility property */
+  div {
+    visibility: hidden;
+  }
+  
+  /* White-space property */
+  pre {
+    white-space: pre;
+  }
+  
+  /* Overflow-x and overflow-y */
+  div {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  /* Box-sizing property */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Line height property */
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Letter-spacing property */
+  h1 {
+    letter-spacing: 2px;
+  }
+  
+  /* Word-spacing property */
+  p {
+    word-spacing: 4px;
+  }
+  
+  /* Background size */
+  div {
+    background-size: cover;
+  }
+  
+  /* Background position */
+  div {
+    background-position: center;
+  }
+  
+  /* Background attachment */
+  div {
+    background-attachment: fixed;
+  }
+  
+  /* List style */
+  ul {
+    list-style: none;
+  }
+  
+  /* Outline property */
+  button {
+    outline: none;
+  }
+  
+  /* Filter property */
+  img {
+    filter: blur(5px);
+  }
