@@ -1,0 +1,183 @@
+/* Combinators */
+
+/* Descendant combinator */
+.container p span {
+  color: blue;
+}
+
+/* Child combinator */
+.container > p {
+  margin: 10px;
+}
+
+/* Adjacent sibling combinator */
+h2 + p {
+  color: green;
+}
+
+/* General sibling combinator */
+h2 ~ p {
+  color: red;
+}
+
+/* Pseudo-classes and Pseudo-elements */
+
+/* Hover pseudo-class */
+a:hover {
+  color: orange;
+}
+
+/* Focus pseudo-class */
+input:focus {
+  border: 2px solid blue;
+}
+
+/* First-letter pseudo-element */
+p::first-letter {
+  font-size: 2rem;
+  color: red;
+}
+
+/* Before pseudo-element */
+p::before {
+  content: "Note: ";
+  color: grey;
+}
+
+/* After pseudo-element */
+p::after {
+  content: " (end)";
+  color: grey;
+}
+
+/* CSS Variables */
+
+/* Root variables */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --padding: 20px;
+}
+
+/* Using variables */
+button {
+  background-color: var(--primary-color);
+  padding: var(--padding);
+}
+
+/* Grid Layout */
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+/* Grid item */
+.grid-item {
+  background-color: var(--secondary-color);
+  padding: 20px;
+}
+
+/* Flexbox */
+
+/* Flex container */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Flex item */
+.flex-item {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Media Queries */
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+/* Animations */
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animation */
+.element {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Transitions */
+
+/* Button transition */
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Gradients */
+
+/* Linear gradient */
+.gradient-bg {
+  background: linear-gradient(45deg, #ff6f61, #ff9a9e);
+}
+
+/* Radial gradient */
+.radial-bg {
+  background: radial-gradient(circle, #ff6f61, #ff9a9e);
+}
+
+/* Custom Fonts */
+
+/* Import custom font */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('fonts/customfont.woff2') format('woff2');
+}
+
+h1 {
+  font-family: 'CustomFont', sans-serif;
+}
+
+/* CSS Counters */
+
+/* Ordered list counter */
+ol {
+  counter-reset: section;
+}
+
+li::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+
+/* Box Model properties */
+
+/* Box with padding, margin, border */
+.box {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+  width: 300px;
+  height: 150px;
+}
